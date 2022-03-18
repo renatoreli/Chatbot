@@ -22,13 +22,10 @@ def query(user_input):
 	return evaluate(user_input)
 
 def get_text():
-    input_text = st.text_input("You: ","Hello, how are you?", key="input")
-    return input_text 
+    return st.text_input("You: ","Hello, how are you?", key="input") 
 
 
-user_input = get_text()
-
-if user_input:
+if user_input := get_text():
     output = query(user_input)
 
     st.session_state.past.append(user_input)
