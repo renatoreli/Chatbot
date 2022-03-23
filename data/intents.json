@@ -263,6 +263,58 @@
             "patterns": ["How to improve team members domain knowledge", "improving domain knowledge of team members"],
             "responses": ["set up key meetings and workshop,create a shared drive for information,Hold informal sharing session"],
             "context": [""]
+        },
+       
+        {   "tag": "help",
+            "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+            "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+        },
+        {   "tag": "createaccount",
+            "patterns": ["I need to create a new account", "how to open a new account", "I want to create an account", "can you create an account for me", "how to open a new account"],
+            "responses": ["You can just easily create a new account from our web site", "Just go to our web site and follow the guidelines to create a new account"]
+        },
+        {   "tag": "complaint",
+            "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+            "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
+        },
+        {   "tag": "placment stats",
+            "patterns": ["0"],
+            "responses": ["http://ldce.ac.in/upload/pdf/placement-cell/PLACEMENT-2019.pdf"]
+        },
+        {   "tag": "Top Recruiters",
+            "patterns": ["1"],
+            "responses": ["http://ldce.ac.in/upload/pdf/placement-cell/our_recruiters.pdf"]
+        },
+        {   "tag": "Top Recruiters",
+            "patterns": ["1"],
+            "responses": ["http://ldce.ac.in/upload/pdf/placement-cell/our_recruiters.pdf"]
+        },
+        {   "tag": "Hardware/Software",
+            "patterns": ["Hardware"],
+            "responses": ["E-Infochips,L&T,GNFC,Ambuja cement"]
+        },
+        {   "tag": "Hardware/Software",
+            "patterns": ["Software"],
+            "responses": ["Accenture,TCS,Cognizant,HSBC"]
+        },
+        {   "tag": "Placement process",
+            "patterns": ["3"],
+            "responses": ["Step-1:Online test",
+                           "Step-2:Gropu discussions",
+                           "step-3:FTF Interviews",
+                           "step-4:HR round"]
+             
+        },
+            {"tag": "Resume building",
+            "patterns": ["4"],
+            "responses": ["Tip-1:it should have your name,contact no,education,experience,leadership roles(if any)",
+                           "tip-2:mention internships and projects clearly in a detailed manner",
+                           "Tip-3:Dont mention other unnecssary and personal details"]
+        },
+        {   "tag": "TPO rules",
+            "patterns": ["5"],
+            "responses": [""]
         }
+
     ]
 }

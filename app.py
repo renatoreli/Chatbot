@@ -3,12 +3,12 @@ from streamlit_chat import message
 from evaluate import evaluate
 
 st.set_page_config(
-    page_title="Speakbot",
-    page_icon=":robot:"
+    page_title="Božo-Bot",
+    page_icon="::"
 )
 
 
-st.header("SpeakBot")
+st.header("Božo-Bot")
 #st.markdown("[Github](https://github.com/ai-yash/st-chat)")
 
 if 'generated' not in st.session_state:
@@ -22,7 +22,7 @@ def query(user_input):
 	return evaluate(user_input)
 
 def get_text():
-    return st.text_input("You: ","Hello, how are you?", key="input") 
+    return st.text_input("You : ", key="input")
 
 
 if user_input := get_text():
@@ -35,4 +35,4 @@ if st.session_state['generated']:
 
     for i in range(len(st.session_state['generated'])-1, -1, -1):
         message(st.session_state["generated"][i], key=str(i))
-        message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
+        message(st.session_state['past'][i], is_user=True, key=str(i) + '_user') 
