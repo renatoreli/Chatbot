@@ -2,15 +2,22 @@ import streamlit as st
 from streamlit_chat import message
 from evaluate import evaluate
 
+#chatbot apppearance
 st.set_page_config(
-    page_title="Božo-Bot",
-    page_icon="::"
+    page_title="ConvoBot",
+    page_icon="computer"
 )
 
-
-st.header("Božo-Bot")
+st.sidebar.title("Natural Learning Process Chatbot")
+st.sidebar.text("Natural language processing (NLP)\nrefers to the branch of computer\nscience—and more specifically,\nthe branch of AI—concerned with\ngiving computers the ability to\nunderstand text and spoken words in\nmuch the same way human beings can.")
+st.header("NLP Chatbot",anchor=None)
+st.write("This NLP ConvoBot is an NLP conversational chatterbot based on an intents database ")
+#st.subheader('Chatbot project based on intents database')
+st.header("Convo-Bot")
 #st.markdown("[Github](https://github.com/ai-yash/st-chat)")
 
+
+#code
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
 
@@ -22,7 +29,9 @@ def query(user_input):
 	return evaluate(user_input)
 
 def get_text():
-    return st.text_input("You : ", key="input")
+    return st.text_input("You : ", key="input",value="", max_chars=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False)
+
+
 
 
 if user_input := get_text():
