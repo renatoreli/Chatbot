@@ -11,12 +11,14 @@ st.set_page_config(
 st.sidebar.title("Natural Learning Process Chatbot")
 st.sidebar.text("Natural language processing (NLP)\nrefers to the branch of computer\nscience—and more specifically,\nthe branch of AI—concerned with\ngiving computers the ability to\nunderstand text and spoken words in\nmuch the same way human beings can.")
 st.sidebar.text("\n")
-st.sidebar.text("This chatbot is based on intents\ndatabase, its purpose is to\ncommunicate with users that\nhave certain inquiries about a\ncompany such as orders,\nmaintenance, accounts, workers\nand PR problems")
-st.header("NLP Chatbot",anchor=None)
-st.write("This NLP ConvoBot is an NLP conversational chatterbot based on an intents database ")
-#st.subheader('Chatbot project based on intents database')
+st.sidebar.text("This chatbot is based on intents\ndatabase, its purpose is to\ncommunicate with users that\nhave certain inquiries about a\ncompany such as orders,\nmaintenance, accounts, workers\nand PR problems.")
+st.sidebar.text("\n")
+st.sidebar.text("To start the conversation,\nsimply write in your input\nand bot will answer you\naccording to his trained answers. ")
+#st.header("NLP Chatbot",anchor=None)
+#st.write("This NLP ConvoBot is an NLP conversational chatterbot based on an intents database ")
+
 st.header("Convo-Bot")
-#st.markdown("[Github](https://github.com/ai-yash/st-chat)")
+
 
 
 #code
