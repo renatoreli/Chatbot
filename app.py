@@ -10,6 +10,8 @@ st.set_page_config(
 
 st.sidebar.title("Natural Learning Process Chatbot")
 st.sidebar.text("Natural language processing (NLP)\nrefers to the branch of computer\nscience—and more specifically,\nthe branch of AI—concerned with\ngiving computers the ability to\nunderstand text and spoken words in\nmuch the same way human beings can.")
+st.sidebar.text("\n")
+st.sidebar.text("This chatbot is based on intents\ndatabase, its purpose is to\ncommunicate with users that\nhave certain inquiries about a\ncompany such as orders,\nmaintenance, accounts, workers\nand PR problems")
 st.header("NLP Chatbot",anchor=None)
 st.write("This NLP ConvoBot is an NLP conversational chatterbot based on an intents database ")
 #st.subheader('Chatbot project based on intents database')
@@ -29,7 +31,7 @@ def query(user_input):
 	return evaluate(user_input)
 
 def get_text():
-    return st.text_input("You : ", key="input",value="", max_chars=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False)
+    return st.text_input("Start your conversation : ", key="input",value="", max_chars=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False)
 
 
 
