@@ -29,10 +29,10 @@ max_len: int = 13
 
 
 def evaluate(user_input):
-    sequences = tokenizer.texts_to_sequences([user_input])
-    padded_sequences = pad_sequences(sequences, maxlen=max_len, truncating="post")
-    result = model.predict(padded_sequences)
-    prediction = np.argmax(result)
+    sequences = tokenizer.texts_to_sequences([user_input]) #user input u brojeve
+    padded_sequences = pad_sequences(sequences, maxlen=max_len, truncating="post") #pad zbog dimenzionalnosti
+    result = model.predict(padded_sequences) #predict , vrati listu sa postotcima koji odgovaraju pojedinim klasama(tagovi)
+    prediction = np.argmax(result) #index gdje je postotak najveci
 
     tag = labels[prediction]
 
